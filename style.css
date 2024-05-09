@@ -19,7 +19,7 @@ body {
         rgba(0,0,0,0) 100% /* Transition to fully transparent at 100% */
     ),
     url('https://shfb.org/wp-content/uploads/2018/08/give-help-banner-e1536704438793.jpg') no-repeat right center / cover;
-    height: 450px; /* Sets the height of the header */
+    height: 500px; /* Sets the height of the header */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,62 +36,10 @@ body {
 
 /* Styles for sections within the content */
 .content-section {
-    display: flex;
-    flex-direction: column; /* Ensures content stacks vertically */
-    align-items: center; /* Centers the content */
     background: white;
     padding: 20px;
-    margin: 20px auto; /* Center the section and add margin for spacing */
+    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Optional: Restricts the width of the section */
-}
-
-.about-text, .about-graph {
-    width: 50%;
-    align-items: center; /* Center-align the items if needed */
-}
-
-/* Ensure images in the content section always display below the text */
-.content-section img {
-    width: 100%; /* Full width within the container */
-    max-width: 600px; /* Restricts the image width */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Adds space between the text and image */
-}
-
-/* Adjustments to the specific content-section id if necessary */
-#efforts {
-    align-items: flex-start; /* Aligns items to the start of the flex container */
-}
-
-.about-text {
-    width: 50%;
-}
-
-.about-graph {
-    width: 50%;
-}
-
-.graph-bar {
-    margin: 20px 0;
-    position: relative;
-    background-color: #eee;
-    height: 30px;
-}
-
-.bar-label {
-    position: absolute;
-    z-index: 2;
-    font-size: 14px;
-    color: white;
-    padding: 5px;
-}
-
-.bar-fill {
-    background-color: orange;
-    width: 0; /* Initially zero width */
-    height: 30px;
-    transition: width 2s ease;
 }
 
 /* Image styles */
@@ -106,7 +54,6 @@ img {
 .cta {
     text-align: center;
     margin-top: 20px;
-    width: 100%;
 }
 
 /* Button styles */
@@ -139,7 +86,8 @@ button:hover {
     h1 {
         font-size: 1.8em; /* Smaller font size for the title on smaller screens */
     }
-    .about-text, .about-graph {
-        width: 100%;
+    /* Adjusting left margin for smaller screens to maintain layout */
+    #hero h1, #hero p {
+        margin-left: 10px; /* Slightly reduce the left margin on smaller screens */
     }
 }
