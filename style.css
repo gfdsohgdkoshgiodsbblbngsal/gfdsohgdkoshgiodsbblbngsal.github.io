@@ -25,6 +25,11 @@ body {
     justify-content: center;
 }
 
+/* Adding left margin specifically to header text elements */
+#hero h1, #hero p {
+    margin-left: 20px; /* Adds a left margin to the title and subtitle */
+}
+
 /* Styles for sections within the content */
 .content-section {
     background: white;
@@ -76,5 +81,9 @@ button:hover {
     }
     h1 {
         font-size: 1.8em; /* Smaller font size for the title on smaller screens */
+    }
+    /* Adjusting left margin for smaller screens to maintain layout */
+    #hero h1, #hero p {
+        margin-left: 10px; /* Slightly reduce the left margin on smaller screens */
     }
 }
