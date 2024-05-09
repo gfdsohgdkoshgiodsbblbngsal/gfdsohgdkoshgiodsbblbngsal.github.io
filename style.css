@@ -121,3 +121,31 @@ button:hover {
     padding: 20px;
 }
 
+.values-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.value-block {
+    background-color: white;
+    padding: 20px;
+    width: calc(33% - 40px); /* Adjust width to space evenly, subtract margin */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.value-block h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.value-block p {
+    color: #666;
+    font-size: 14px;
+}
