@@ -14,31 +14,19 @@
 </header>
 
 <div class="content-section" id="about">
-    <div class="about-text">
-        <h2>About the Issue</h2>
-        <p>While Silicon Valley is often celebrated for its role in global tech advancements and high living standards, it also faces a severe, yet hidden, hunger crisis. Many residents find themselves choosing between paying for housing or food due to the region's high cost of living. This section sheds light on the stark realities of food insecurity amidst technological abundance.</p>
-    </div>
-    <div class="about-graph">
-        <div class="graph-bar" id="silicon-valley-renters">
-            <span class="bar-label">Silicon Valley Renters - 50%</span>
-            <div class="bar-fill" data-width="50%"></div>
-        </div>
-        <div class="graph-bar" id="renters-over-65">
-            <span class="bar-label">Renters Over 65 - 58%</span>
-            <div class="bar-fill" data-width="58%"></div>
-        </div>
-    </div>
+    <h2>About the Issue</h2>
+    <p>While Silicon Valley is often celebrated for its role in global tech advancements and high living standards, it also faces a severe, yet hidden, hunger crisis. Many residents find themselves choosing between paying for housing or food due to the region's high cost of living. This section sheds light on the stark realities of food insecurity amidst technological abundance.</p>
 </div>
 
 <div class="content-section" id="efforts">
     <h2>Community Efforts</h2>
-    <img src="201212-laura-haggins-ew-1118a.webp" alt="Food drop-off at a local charity" style="width:100%; max-width: 600px;">
+    <img src="201212-laura-haggins-ew-1118a.webp" alt="Food drop-off at a local charity">
     <p>Local volunteers, like those pictured here, play a crucial role in addressing food scarcity. They support food drives and distribution efforts that provide essential items to those in need. Their dedication is a testament to the community spirit that thrives even in times of hardship.</p>
 </div>
 
 <div class="content-section" id="second-harvest">
     <h2>Second Harvest Food Bank</h2>
-    <img src="images (1).jpg" alt="People lining up at Second Harvest Food Bank" style="width:100%; max-width: 600px;">
+    <img src="images (1).jpg" alt="People lining up at Second Harvest Food Bank">
     <p>Second Harvest Food Bank is a cornerstone of the community in Silicon Valley, organizing food distribution events that support thousands of local families each year. The long lines captured here are a common sight and highlight the high demand for assistance. Through their efforts, Second Harvest helps to mitigate the impact of hunger in the region.</p>
 </div>
 
@@ -48,22 +36,6 @@
     <button onclick="window.location.href='https://www.example.com/donate';">Donate Now</button>
     <button onclick="window.location.href='https://www.example.com/volunteer';">Volunteer</button>
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const observer = new Intersection Observer(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.width = entry.target.getAttribute('data-width');
-            }
-        });
-    }, { threshold: 0.6 }); // Trigger when 60% of the element is visible
-
-    document.querySelectorAll('.bar-fill').forEach(bar => {
-        observer.observe(bar);
-    });
-});
-</script>
 
 </body>
 </html>
