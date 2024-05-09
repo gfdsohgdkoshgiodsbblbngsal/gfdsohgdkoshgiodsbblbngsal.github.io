@@ -90,6 +90,16 @@ button:hover {
     #hero h1, #hero p {
         margin-left: 10px; /* Slightly reduce the left margin on smaller screens */
     }
+
+    .values-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-block {
+        width: 80%;  /* Adjusted for smaller screens */
+        margin: 10px auto;  /* Center align blocks */
+    }
 }
 
 .image-overlay-container {
@@ -123,7 +133,7 @@ button:hover {
 
 .values-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;  /* Changed to space-around for even spacing */
     margin: 20px 40px;
     background-color: #f8f8f8;
     padding: 20px;
@@ -133,7 +143,7 @@ button:hover {
 .value-block {
     background-color: white;
     padding: 20px;
-    width: calc(33% - 40px); /* Adjust width to space evenly, subtract margin */
+    width: 30%;  /* Updated width */
     box-sizing: border-box;
     text-align: center;
     margin: 10px;
