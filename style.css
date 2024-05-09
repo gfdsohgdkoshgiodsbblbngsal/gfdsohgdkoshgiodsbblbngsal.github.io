@@ -100,6 +100,7 @@ button:hover {
 .overlay-image {
     width: 100%;
     height: auto;
+    display: block; /* Ensures there's no extra space under the image */
     border-radius: 8px;
 }
 
@@ -107,15 +108,16 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0; /* Ensures the overlay extends to the full width */
+    bottom: 0; /* Ensures the overlay extends to the full height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Ensuring text is visible on darker backgrounds */
+    color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
     border-radius: 8px;
     padding: 20px;
 }
+
