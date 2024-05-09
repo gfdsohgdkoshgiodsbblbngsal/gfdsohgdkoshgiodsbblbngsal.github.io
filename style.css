@@ -1,42 +1,53 @@
+/* General body styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    padding: 20px;
+    margin: 0; /* Removes default margin */
     color: #333;
     background: #f4f4f4;
 }
 
-header {
-    background: url('header-image.jpg') no-repeat center center/cover;
+/* Header styles with image and gradient */
+#hero {
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 100px 20px;
+    background: linear-gradient(
+        to right,
+        #000000, /* Black color starts */
+        #000000 75%, /* Black color solid till 75% */
+        rgba(0,0,0,0) 100% /* Transition to fully transparent at 100% */
+    ),
+    url('https://shfb.org/wp-content/uploads/2018/08/give-help-banner-e1536704438793.jpg') no-repeat right center / cover;
+    height: 500px; /* Sets the height of the header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* Styles for sections within the content */
 .content-section {
     background: white;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2.4em;
+/* Image styles */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-h2 {
-    color: #555;
-}
-
-p {
-    margin: 20px 0;
-}
-
+/* Call to action section */
 .cta {
     text-align: center;
     margin-top: 20px;
 }
 
+/* Button styles */
 button {
     background-color: #0084ff;
     color: white;
@@ -49,26 +60,21 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease;
 }
 
+/* Hover effect for buttons */
 button:hover {
     background-color: #0056b3;
 }
 
+/* Responsive design adjustments */
 @media (max-width: 768px) {
-    header {
-        padding: 50px 20px;
+    #hero {
+        padding: 50px 20px; /* Smaller padding on smaller screens */
+        height: 300px; /* Shorter height on smaller screens */
     }
-
     h1 {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Smaller font size for the title on smaller screens */
     }
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;  /* Optional, for aesthetic rounded corners */
-    margin-top: 20px;
 }
