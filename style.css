@@ -27,7 +27,7 @@ body {
 
 /* Adding left margin specifically to header text elements */
 #hero h1, #hero p {
-    margin-left: 20px; /* Adds a left margin to the title and subtitle */
+    margin-left: 5%; /* Adds a left margin to the title and subtitle */
 }
 
 #hero p {
