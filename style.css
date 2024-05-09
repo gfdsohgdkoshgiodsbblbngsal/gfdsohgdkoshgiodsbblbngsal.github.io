@@ -159,3 +159,40 @@ button:hover {
     color: #666;
     font-size: 14px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid-item {
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside each grid item */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+}
+
+.grid-item h3 {
+    color: #333; /* Dark grey color for the title */
+    margin: 0 0 10px; /* Margin bottom for spacing */
+}
+
+.grid-item p {
+    color: #666; /* Lighter text color for description */
+    margin: 0 0 20px; /* Space before the button */
+}
+
+.cta-button {
+    background-color: #ff6347; /* Tomato red color */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    align-self: stretch; /* Stretches to fit the container's width */
+}
+
