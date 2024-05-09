@@ -15,7 +15,7 @@ body {
     background: linear-gradient(
         to right,
         #000000, /* Black color starts */
-        #000000 5%, /* Black color solid till 75% */
+        #000000 75%, /* Black color solid till 75% */
         rgba(0,0,0,0) 100% /* Transition to fully transparent at 100% */
     ),
     url('https://shfb.org/wp-content/uploads/2018/08/give-help-banner-e1536704438793.jpg') no-repeat right center / cover;
@@ -27,19 +27,47 @@ body {
 
 /* Adding left margin specifically to header text elements */
 #hero h1, #hero p {
-    margin-left: 5%; /* Adds a left margin to the title and subtitle */
-}
-
-#hero p {
-    font-size: large;
+    margin-left: 20px; /* Adds a left margin to the title and subtitle */
 }
 
 /* Styles for sections within the content */
 .content-section {
+    display: flex;
+    flex-wrap: wrap;
     background: white;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-graph {
+    width: 50%;
+}
+
+.graph-bar {
+    margin: 20px 0;
+    position: relative;
+    background-color: #eee;
+    height: 30px;
+}
+
+.bar-label {
+    position: absolute;
+    z-index: 2;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+}
+
+.bar-fill {
+    background-color: orange;
+    width: 0; /* Initially zero width */
+    height: 30px;
+    transition: width 2s ease;
 }
 
 /* Image styles */
@@ -54,6 +82,7 @@ img {
 .cta {
     text-align: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 /* Button styles */
@@ -86,8 +115,7 @@ button:hover {
     h1 {
         font-size: 1.8em; /* Smaller font size for the title on smaller screens */
     }
-    /* Adjusting left margin for smaller screens to maintain layout */
-    #hero h1, #hero p {
-        margin-left: 10px; /* Slightly reduce the left margin on smaller screens */
+    .about-text, .about-graph {
+        width: 100%;
     }
 }
